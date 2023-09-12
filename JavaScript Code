@@ -1,0 +1,7 @@
+function betterThanAverage(classPoints, yourPoints) {
+  
+  let sum = classPoints.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;})
+
+  return yourPoints > ((sum + yourPoints) / (classPoints.length + 1));
+}
